@@ -1,0 +1,72 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: hsl(259deg 100% 65%);
+    --light-red: hsl(0deg 100% 67%);
+    --white: hsl(0deg 0 86%);
+    --off-white: hsl(0deg 1% 44%);
+    --light-grey: hsl(0deg 0 86%);
+    --smokey-grey: hsl(0deg 1% 44%);
+    --off-black: hsl(0deg 0% 8%);
+    --font-400: poppins-regular, sans-serif;
+    --font-700: poppins-bold, sans-serif;
+    --font-800: poppins-extrabold, sans-serif;
+}
+
+@font-face {
+    font-family: poppins-regular;
+    src: url("assets/fonts/Poppins-Regular.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: poppins-bold;
+    src: url("assets/fonts/Poppins-Bold.ttf")format('truetype');
+}
+
+@font-face {
+    font-family: poppins-extraBol;
+    src: url("assets/fonts/Poppins-ExtraBold.ttf")format('truetype');
+}
+
+html {
+    display: grid;
+    place-items: center;
+}
+
+body {
+    min-height: 100vh;
+    padding: 4rem 1rem 0;
+    background-color: var(--light-grey);
+}
+
+.arrow {
+    object-fit: scale-down;
+    background-color: var(--purple);
+    padding: 0.625rem;
+    border-radius: 50%;
+}
+
+.form-numbers-user {
+    gap: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-date {
+    font-family: var(--font-700);
+    border-radius: 0.625rem;
+    border: 1px solid blue;
+    position: relative;
+    font-size: 1.3rem;
+    width: 5.45rem;
+    padding: 1rem;
+    list-style: none;
+}
+
+.form-numbers-result > input[type="text"] {
+    width: 1rem;
+}
